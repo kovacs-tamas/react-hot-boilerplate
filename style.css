@@ -1,0 +1,96 @@
+/* line 1, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 5, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.app {
+  display: flex; }
+  /* line 7, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .app .video-list {
+    flex: 0 0 160px;
+    padding-right: 10px; }
+  /* line 11, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .app .editor {
+    flex-grow: 1;
+    border: 1px solid #dedede;
+    padding: 5px; }
+
+/* line 17, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.perspective-container {
+  display: flex;
+  flex-direction: row; }
+  /* line 21, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .perspective-container .perspective {
+    background-color: #445566;
+    color: #ffffff;
+    padding: 10px;
+    flex: 1;
+    margin: 2px;
+    text-align: center; }
+
+/* line 32, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.video {
+  background-color: #343434;
+  padding: 15px;
+  margin: 2px;
+  border-left: 3px dashed #dedede;
+  border-right: 3px dashed #dedede;
+  color: #ffffff;
+  text-align: center; }
+
+/* line 42, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.teaser {
+  background-color: #a0a0a0;
+  padding: 10px;
+  margin: 2px; }
+
+/* line 49, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.station .title {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  margin: 2px; }
+
+/* line 56, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.station .teaser-select {
+  display: flex; }
+  /* line 58, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .station .teaser-select .select {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 2px; }
+
+/* line 66, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.station .videos {
+  display: flex; }
+  /* line 68, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .station .videos.drop-disabled {
+    cursor: not-allowed; }
+
+/* line 74, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+.station-perspective {
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin: 2px;
+  flex: 1; }
+  /* line 79, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .station-perspective.drop-enabled {
+    background-color: lightgreen;
+    border: 1px dashed #dedede; }
+  /* line 83, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .station-perspective.drop-possible {
+    border: 1px dashed #dedede; }
+  /* line 86, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+  .station-perspective.drop-disabled {
+    background-color: red; }
+
+/* line 92, /Users/tamas/Work/Private/react-playground/scss/style.scss */
+button {
+  background-color: #e0e0e0;
+  border: 0;
+  padding: 10px;
+  margin: 2px;
+  display: block;
+  width: inherit; }

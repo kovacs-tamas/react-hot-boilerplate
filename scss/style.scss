@@ -1,0 +1,99 @@
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.app {
+  display: flex;
+  .video-list {
+    flex: 0 0 160px;
+    padding-right: 10px;
+  }
+  .editor {
+    flex-grow: 1;
+    border: 1px solid #dedede;
+    padding: 5px;
+  }
+}
+.perspective-container {
+  display: flex;
+  flex-direction: row;
+
+  .perspective {
+    background-color: #445566;
+    color: #ffffff;
+    padding: 10px;
+    flex: 1;
+    margin: 2px;
+    text-align: center;
+  }
+}
+
+
+.video {
+  background-color: #343434;
+  padding: 15px;
+  margin: 2px;
+  border-left: 3px dashed #dedede;
+  border-right: 3px dashed #dedede;
+  color: #ffffff;
+  text-align: center;
+}
+
+.teaser {
+  background-color: #a0a0a0;
+  padding: 10px;
+  margin: 2px;
+}
+
+.station {
+  .title {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    margin: 2px;
+  }
+
+  .teaser-select {
+    display: flex;
+    .select {
+      flex-grow: 1;
+
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin: 2px;
+    }
+  }
+  .videos {
+    display: flex;
+    &.drop-disabled {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.station-perspective {
+  border: 1px solid #dedede;
+  padding: 10px;
+  margin: 2px;
+  flex: 1;
+  &.drop-enabled {
+    background-color: lightgreen;
+    border: 1px dashed #dedede;
+  }
+  &.drop-possible {
+    border: 1px dashed #dedede;
+  }
+  &.drop-disabled {
+    background-color: red;
+
+  }
+}
+
+button {
+  background-color: #e0e0e0;
+  border: 0;
+  padding: 10px;
+  margin: 2px;
+  display: block;
+  width: inherit;
+}
